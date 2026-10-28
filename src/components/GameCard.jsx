@@ -40,7 +40,7 @@ export const GameCard = ({ game, onSelectGame, isOwned }) => {
               fontWeight: 'bold'
             }}
           >
-            {isOwned ? 'Ver en Biblioteca' : 'Ver Detalles'}
+            {isOwned ? 'En Biblioteca' : 'Ver Detalles'}
           </button>
         </div>
       </div>

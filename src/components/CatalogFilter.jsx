@@ -3,7 +3,6 @@ import React from 'react';
 export const CatalogFilter = ({ searchTerm, setSearchTerm, selectedGenre, setSelectedGenre, genres }) => {
   return (
     <div className="catalog-filters" style={{ display: 'flex', gap: '1rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
-      {/* Campo de búsqueda */}
       <input
         type="text"
         placeholder="Buscar juego por título..."
@@ -19,7 +18,6 @@ export const CatalogFilter = ({ searchTerm, setSearchTerm, selectedGenre, setSel
         }}
       />
 
-      {/* Filtro por Géneros */}
       <select
         value={selectedGenre}
         onChange={(e) => setSelectedGenre(e.target.value)}

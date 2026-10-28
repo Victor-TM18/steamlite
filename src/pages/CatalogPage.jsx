@@ -8,30 +8,25 @@ export const CatalogPage = ({ onSelectGame, userLibrary = [] }) => {
   const [selectedGenre, setSelectedGenre] = useState('Todos');
   const [loading, setLoading] = useState(true);
 
-  // Carga inicial del JSON
   useEffect(() => {
     fetch('/data/games.json')
-      ? fetch('/data/games.json')
-          .then((res) => res.json())
-          .then((data) => {
-            setGames(data);
-            setLoading(false);
-          })
-          .catch((err) => console.error('Error al cargar juegos:', err))
-      : setLoading(false);
+      .then((res) => res.json())
+      .then((data) => {
+        setGames(data);
+        setLoading(false);
+      })
+      .catch((err) => console.error('Error al cargar juegos:', err));
   }, []);
 
-  // Extraer géneros únicos
   const genres = [...new Set(games.map((g) => g.genre))];
 
-  // Lógica de filtrado en tiempo real
   const filteredGames = games.filter((game) => {
     const matchesSearch = game.title.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesGenre = selectedGenre === 'Todos' || game.genre === selectedGenre;
     return matchesSearch && matchesGenre;
   });
 
-  if (loading) return <div style={{ color: '#fff', textAlign: 'center' }}>Cargando catálogo...</div>;
+  if (loading) return <div style={{ color: '#fff', textAlign: 'center', padding: '3rem' }}>Cargando catálogo...</div>;
 
   return (
     <div style={{ padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
