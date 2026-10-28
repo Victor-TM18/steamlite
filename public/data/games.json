@@ -1,0 +1,46 @@
+[
+  {
+    "id": "snake-retro",
+    "title": "Snake Classic",
+    "price": 0.00,
+    "genre": "Arcade",
+    "description": "El clásico juego de la serpiente desarrollado en HTML5 Canvas. Junta manzanas y evita chocar contra las paredes.",
+    "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=600",
+    "rating": 4.8,
+    "isFree": true,
+    "type": "canvas"
+  },
+  {
+    "id": "pong-retro",
+    "title": "Retro Pong 2D",
+    "price": 4.99,
+    "genre": "Arcade",
+    "description": "Enfréntate a la IA en este legendario simulador de tenis de mesa vintage.",
+    "image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=600",
+    "rating": 4.5,
+    "isFree": false,
+    "type": "canvas"
+  },
+  {
+    "id": "cyber-runner",
+    "title": "Cyber Runner 2077",
+    "price": 14.99,
+    "genre": "Acción",
+    "description": "Corre a través de la ciudad futurista evitando obstáculos a alta velocidad.",
+    "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=600",
+    "rating": 4.9,
+    "isFree": false,
+    "type": "external"
+  },
+  {
+    "id": "space-defense",
+    "title": "Space Defense",
+    "price": 9.99,
+    "genre": "Estrategia",
+    "description": "Protege tu base espacial de continuas oleadas de naves enemigas.",
+    "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=600",
+    "rating": 4.2,
+    "isFree": false,
+    "type": "external"
+  }
+]
